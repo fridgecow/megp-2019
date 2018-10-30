@@ -9,3 +9,12 @@ script:
   - npm run build
 on:
   branch: master
+notifications:
+  webhooks:
+  urls:
+    - http://megp.soc.srcf.net/deploy.php?sat=PzkRaebuBzwueVX8YHCaypUC
+  on_success: always # default: always
+  on_failure: never # default: always
+  on_start: never   # default: never
+  on_cancel: never # default: always
+  on_error: never # default: always
