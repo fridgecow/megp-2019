@@ -1,16 +1,18 @@
 import * as React from 'react';
 import './App.css';
 import Background from './components/background/Background';
+import Frame from './components/frame/Frame';
+
+import Logo from './logo.png';
 
 class App extends React.Component {
   public render() {
     return (
       <div className="App">
         <Background />
+        <Frame />
         <div className="foreground">
-          <header className="App-header">
-            <h1 className="App-title">MEGP 2019</h1>
-          </header>
+          <img src={Logo} alt="MEGP 2019" className="logo"/>
           <p className="App-intro">
             Coming soon!
           </p>

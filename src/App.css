@@ -6,7 +6,11 @@
 .foreground {
   height: 100vh;
   width: 100vw;
-  position: absolute;
+  padding-bottom: 192px;
+}
+
+.foreground > * {
+  z-index: 1;
 }
 
 .App-header {
@@ -22,4 +26,11 @@
 
 .App-intro {
   font-size: large;
+}
+
+.logo {
+  font-size: xx-large;
+  color: rgb(25, 68, 72);
+  font-weight: bold;
+  height: 100vh;
 }

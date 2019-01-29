@@ -2,39 +2,6 @@
   height: 100vh;
   width: 100vw;
   position: fixed;
-  z-index: -1;
   background-color: rgb(218, 170, 78);
-}
-
-.border-corners {
-  position: fixed;
   z-index: -1;
-  height: 100vh;
-  width: 100vw;
-  background: url(./border/top-left.png) left top no-repeat,
-              url(./border/top-right.png) right top no-repeat,
-              url(./border/bottom-left.png) left bottom no-repeat,
-              url(./border/bottom-right.png) right bottom no-repeat;
-}
-
-.border-x {
-  position: fixed;
-  height: 100vh;
-  width: calc(100vw - 384px);
-  z-index: -1;
-  margin-left: 192px;
-  margin-right: 192px;
-  background: url(border/top.png) top repeat-x,
-              url(border/bottom.png) bottom repeat-x;
-}
-
-.border-y {
-  position: fixed;
-  height: calc(100vh - 384px);
-  width: 100vw;
-  z-index: -1;
-  margin-top: 192px;
-  margin-bottom: 192px;
-  background: url(border/left.png) left repeat-y,
-              url(border/right.png) right repeat-y;
 }
