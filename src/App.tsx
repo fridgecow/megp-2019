@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
 import Background from './components/background/Background';
 import Frame from './components/frame/Frame';
@@ -12,26 +13,28 @@ import Logo from './logo.png';
 class App extends React.Component {
   public render() {
     return (
-      <div className="App">
-        <Background />
-        <Frame />
-        <div className="foreground">
-          <Pane>
-            <Page name="home">
-              <img src={Logo} alt="MEGP 2019" className="logo"/>
-              <NavBar />
-            </Page>
-          </Pane>
-          <Pane>
-            <Page name="tickets">
-              Buy tickets now!
-            </Page>
-            <Page name="committee">
-              Committee members
-            </Page>
-          </Pane>
+      <Router>
+        <div className="App">
+          <Background />
+          <Frame />
+          <div className="foreground">
+            <Pane>
+              <Page name="home">
+                <img src={Logo} alt="MEGP 2019" className="logo"/>
+                <NavBar />
+              </Page>
+            </Pane>
+            <Pane>
+              <Page name="tickets">
+                Buy tickets now!
+              </Page>
+              <Page name="committee">
+                Committee members
+              </Page>
+            </Pane>
+          </div>
         </div>
-      </div>
+      </Router>
     );
   }
 }
