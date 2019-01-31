@@ -19,7 +19,7 @@ export default class Page extends React.Component<IPageProps> {
           return (
             <div className="page" ref={
               (el:HTMLDivElement)=>{
-                if(match !== null){
+                if(match !== null && el !== null){
                   el.scrollIntoView();
                 }
               }
