@@ -2,8 +2,12 @@ import * as React from 'react';
 import './App.css';
 import Background from './components/background/Background';
 import Frame from './components/frame/Frame';
+import NavBar from './components/navbar/NavBar';
+import Page from './components/page/Page';
+import Pane from './components/pane/Pane';
 
 import Logo from './logo.png';
+
 
 class App extends React.Component {
   public render() {
@@ -12,10 +16,20 @@ class App extends React.Component {
         <Background />
         <Frame />
         <div className="foreground">
-          <img src={Logo} alt="MEGP 2019" className="logo"/>
-          <p className="App-intro">
-            Coming soon!
-          </p>
+          <Pane>
+            <Page name="home">
+              <img src={Logo} alt="MEGP 2019" className="logo"/>
+              <NavBar />
+            </Page>
+          </Pane>
+          <Pane>
+            <Page name="tickets">
+              Buy tickets now!
+            </Page>
+            <Page name="committee">
+              Committee members
+            </Page>
+          </Pane>
         </div>
       </div>
     );

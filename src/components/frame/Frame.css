@@ -7,6 +7,7 @@
               url(./border/top-right.png) right top no-repeat,
               url(./border/bottom-left.png) left bottom no-repeat,
               url(./border/bottom-right.png) right bottom no-repeat;
+  pointer-events: none;
 }
 
 .border-x {
@@ -18,6 +19,7 @@
   margin-right: 192px;
   background: url(border/top.png) top repeat-x,
               url(border/bottom.png) bottom repeat-x;
+  pointer-events: none;
 }
 
 .border-y {
@@ -27,6 +29,8 @@
   z-index: 2;
   margin-top: 192px;
   margin-bottom: 192px;
+  background: url(border/top.png) top repeat-x;
   background: url(border/left.png) left repeat-y,
               url(border/right.png) right repeat-y;
+  pointer-events: none;
 }

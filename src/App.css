@@ -3,10 +3,12 @@
   height: 100vh;
 }
 
+/* Small-width and common styles */
+
 .foreground {
   height: 100vh;
-  width: 100vw;
-  padding-bottom: 192px;
+  box-sizing: border-box;
+  display: block;
 }
 
 .foreground > * {
@@ -14,7 +16,6 @@
 }
 
 .App-header {
-/*  background-color: #222; */
   height: 150px;
   padding: 20px;
   color: rgb(25, 68, 72);
@@ -32,5 +33,18 @@
   font-size: xx-large;
   color: rgb(25, 68, 72);
   font-weight: bold;
-  height: 100vh;
+  height: 50vh;
 }
+
+/* Large width styles */
+@media only screen and (min-width: 1000px) {
+  .logo {
+    width: 40vw;
+    height: auto;
+  }
+
+  .foreground {
+    display: flex;
+  }
+}
+
