@@ -27,5 +27,8 @@
     "webpack",
     "jest",
     "src/setupTests.ts"
-  ]
+  ],
+  "rules": {
+    "jsx-no-lambda": false
+  }
 }
