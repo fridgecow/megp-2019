@@ -33,7 +33,8 @@
   font-size: xx-large;
   color: rgb(25, 68, 72);
   font-weight: bold;
-  height: 50vh;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 /* Large width styles */

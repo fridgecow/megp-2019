@@ -2,7 +2,16 @@
   height: 100vh;
 }
 
+.padding {
+  display: none;
+}
+
 @media only screen and (min-width: 1000px) {
+  .padding-pane {
+    flex: 0 0 64px !important;
+    display: flex;
+  }
+
   .pane {
     flex: 1;
     overflow-y: auto;

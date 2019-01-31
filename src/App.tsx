@@ -4,7 +4,9 @@ import './App.css';
 import Background from './components/background/Background';
 import Frame from './components/frame/Frame';
 import NavBar from './components/navbar/NavBar';
+import PaddingPage from './components/page/PaddingPage';
 import Page from './components/page/Page';
+import PaddingPane from './components/pane/PaddingPane';
 import Pane from './components/pane/Pane';
 
 import { faq } from './lib/Faqs';
@@ -18,6 +20,7 @@ class App extends React.Component {
           <Background />
           <Frame />
           <div className="foreground">
+            <PaddingPane/>
             <Pane>
               <Page name="home">
                 <img src={Logo} alt="MEGP 2019" className="logo"/>
@@ -47,7 +50,9 @@ class App extends React.Component {
                   )
                 }
               </Page>
+              <PaddingPage/>
             </Pane>
+            <PaddingPane/>
           </div>
         </div>
       </Router>
