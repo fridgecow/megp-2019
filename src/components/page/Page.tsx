@@ -17,7 +17,7 @@ export default class Page extends React.Component<IPageProps> {
       <Route path={`/${this.props.name}`} children={
         ({match}) => {
           return (
-            <div className="page" ref={
+            <div className={`page ${this.props.name}`} ref={
               (el:HTMLDivElement)=>{
                 if(match !== null && el !== null){
                   el.scrollIntoView();

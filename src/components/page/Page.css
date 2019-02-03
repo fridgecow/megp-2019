@@ -9,8 +9,8 @@
 }
 
 .padding-page {
-  height: 128px;
-  min-height: 128px !important;
+  height: 192px;
+  min-height: 192px !important;
 }
 
 @media only screen and (min-width: 1000px) {

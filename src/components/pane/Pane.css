@@ -8,7 +8,7 @@
 
 @media only screen and (min-width: 1000px) {
   .padding-pane {
-    flex: 0 0 64px !important;
+    flex: 0 0 192px !important;
     display: flex;
   }
 

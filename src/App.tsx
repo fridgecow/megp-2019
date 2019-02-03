@@ -27,6 +27,8 @@ class App extends React.Component {
                 <NavBar />
               </Page>
             </Pane>
+            <PaddingPane/>
+            <PaddingPane/>
             <Pane>
               <Page name="tickets">
                 Buy tickets now!
@@ -43,7 +45,6 @@ class App extends React.Component {
                         <div key={qna.question}>
                           <p><b>{qna.question}</b></p>
                           <p>{qna.answer}</p>
-                          <p/>
                         </div>
                       )}
                     </div>

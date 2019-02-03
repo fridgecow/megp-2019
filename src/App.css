@@ -9,6 +9,7 @@
   height: 100vh;
   box-sizing: border-box;
   display: block;
+  color: rgb(24, 67, 72);
 }
 
 .foreground > * {
