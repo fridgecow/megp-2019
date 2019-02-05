@@ -3,8 +3,9 @@
   width: 100vw;
   position: fixed;
   background-color: rgb(218, 170, 78);
-  background-image: url("bg.png");
-  background-position: center;
-  background-size: 100% 100%;
+  background-image: url("balloon-ud.png"), url("balloon-ud.png"), url("balloon.png"), url("balloon.png"), url("bg-noballoons.png");
+  background-position: 55% 27%, 48% 40%, 53% 59%, 47% 72%, center;
+  background-size: auto 24%, auto 14%, auto 14%, auto 24%, 100% 100%;
+  background-repeat: no-repeat;
   z-index: -1;
 }
