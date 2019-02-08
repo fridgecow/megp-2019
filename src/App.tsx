@@ -9,6 +9,7 @@ import Page from './components/page/Page';
 import PaddingPane from './components/pane/PaddingPane';
 import Pane from './components/pane/Pane';
 
+import employment from './lib/Employment';
 import { faq } from './lib/Faqs';
 import Logo from './logo.png';
 
@@ -35,6 +36,16 @@ class App extends React.Component {
               </Page>
               <Page name="committee">
                 Committee members
+              </Page>
+              <Page name="employment">
+                {
+                  employment.map(({role,description}) => 
+                    <div key={role}>
+                      <h1>{role}</h1>
+                      <p>{description}</p> 
+                    </div>
+                  )
+                }
               </Page>
               <Page name="faqs">
                 {
