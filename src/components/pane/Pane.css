@@ -1,17 +1,10 @@
 .pane {
   height: 100vh;
-}
-
-.padding-pane {
-  display: none;
+  padding-left: 9vw;
+  padding-right: 9vw;
 }
 
 @media only screen and (min-width: 1000px) {
-  .padding-pane {
-    flex: 0 0 192px !important;
-    display: flex;
-  }
-
   .pane {
     flex: 1;
     overflow-y: auto;
