@@ -30,7 +30,7 @@ class App extends React.Component {
               <Page name="tickets">
                 Buy tickets now!
                 <iframe src="https://fixr.co/event/225101863?compact=true"
-                  style={{width: "500px", height: "550px", border: "none"}} />
+                  style={{width: "400px", height: "550px", border: "none"}} />
               </Page>
               <Page name="committee">
                 Committee members
