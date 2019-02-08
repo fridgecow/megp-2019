@@ -10,10 +10,6 @@ interface INavItem {
 
 const items: INavItem[] = [
   {
-    url: "/",
-    name: "Home"
-  },
-  {
     url: "/tickets",
     name: "Tickets"
   },
@@ -25,14 +21,14 @@ const items: INavItem[] = [
     url: "/employment",
     name: "Employment"
   },
-  {
+/*  {
     url: "/charity",
     name: "Charity"
   },
   {
     url: "/sponsors",
     name: "Sponsors"
-  },
+  }, */
   {
     url: "/faqs",
     name: "FAQs"

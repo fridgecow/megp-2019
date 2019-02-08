@@ -2,6 +2,8 @@ import * as React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
 import Background from './components/background/Background';
+import CommitteeList from './components/committeelist/CommitteeList';
+import Expander from './components/expander/Expander';
 import Frame from './components/frame/Frame';
 import NavBar from './components/navbar/NavBar';
 import PaddingPage from './components/page/PaddingPage';
@@ -10,6 +12,7 @@ import Pane from './components/pane/Pane';
 
 import employment from './lib/Employment';
 import { faq } from './lib/Faqs';
+import { tandc } from './lib/Tandc';
 import Logo from './logo.png';
 
 class App extends React.Component {
@@ -28,36 +31,50 @@ class App extends React.Component {
             </Pane>
             <Pane>
               <Page name="tickets">
+                <h1>Tickets</h1>
                 Buy tickets now!
                 <iframe src="https://fixr.co/event/225101863?compact=true"
                   style={{width: "400px", height: "550px", border: "none"}} />
               </Page>
               <Page name="committee">
-                Committee members
+                <h1>Committee</h1>
+                <CommitteeList/>
               </Page>
               <Page name="employment">
+                <h1>Employment</h1>
                 {
                   employment.map(({role,description}) => 
-                    <div key={role}>
-                      <h1>{role}</h1>
-                      <p>{description}</p> 
-                    </div>
+                    <Expander key={role} heading={role} body={description}/>
                   )
                 }
               </Page>
               <Page name="faqs">
+                <h1>FAQs</h1>
                 {
-                  faq.map(section =>
-                    <div key={section.heading}>
-                      <h1>{section.heading}</h1>
-                      {section.questions.map(qna =>
-                        <div key={qna.question}>
-                          <p><b>{qna.question}</b></p>
-                          <p>{qna.answer}</p>
-                        </div>
+                  faq.map(({heading, questions}) =>
+                    <div key={heading}>
+                      <h2>{heading}</h2>
+                      {questions.map(({question, answer}) =>
+                        <Expander key={question} heading={question} body={answer}/>
                       )}
                     </div>
                   )
+                }
+              </Page>
+              <Page name="tandc">
+                <h1>T+C</h1>
+                {
+                  tandc.map(({heading, terms}) => [
+                    <Expander key={"ex" + heading} heading={heading} body={
+                      <ol className="terms">
+                      {
+                        terms.map(term =>
+                          <li key={term}>{term}</li>
+                        )
+                      }
+                      </ol>
+                    }/>
+                  ])
                 }
               </Page>
               <PaddingPage/>

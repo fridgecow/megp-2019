@@ -22,11 +22,11 @@ const employment : IEmploymentSection[] = [
   },
   {
     role: "Clear-up Workers",
-    description: "This role involves returning Murray Edwards’ Gardens to their usual, pristine beauty the day after the Garden Party (Monday 17th June 2019). Applicants will be required to do some physical work (e.g. taking decorations down, moving tables, etc…) and be energetic and positive to make it lots of fun! This is a great way to earn some extra cash before May Week!<br />Please note… Clear Up workers are likely to be asked to do repetitive and/or heavy lifting. Should this pose a problem, please indicate this on your application so that we can best accommodate you as part of our worker team.",
+    description: "This role involves returning Murray Edwards’ Gardens to their usual, pristine beauty the day after the Garden Party (Monday 17th June 2019). Applicants will be required to do some physical work (e.g. taking decorations down, moving tables, etc…) and be energetic and positive to make it lots of fun! This is a great way to earn some extra cash before May Week!\nPlease note… Clear Up workers are likely to be asked to do repetitive and/or heavy lifting. Should this pose a problem, please indicate this on your application so that we can best accommodate you as part of our worker team.",
   },
   {
     role: "General Information / Payment",
-    description: "** All workers on the day of the Garden Party (Sunday 16th June 2019) will be required to work from 2pm-10pm and workers will have an hour break where they will be able to enjoy the Garden Party! <br /> Pay will be £43.05 for General Workers / Team Leaders and £53.05 for Managers. Higher rates apply for over 21’s -- £53.90 for General Workers / Team Leaders and £63.90 for Managers.<br />Clear-up Workers will do a 2.5 hour shift from 9am-11:30am the day after the Garden Party (Monday 17th June 2019) with £20 payment for completion of the clear-up work. <br />Please note, all workers are required to write valid cheques as security deposits before the event. "
+    description: "** All workers on the day of the Garden Party (Sunday 16th June 2019) will be required to work from 2pm-10pm and workers will have an hour break where they will be able to enjoy the Garden Party! \n Pay will be £43.05 for General Workers / Team Leaders and £53.05 for Managers. Higher rates apply for over 21’s -- £53.90 for General Workers / Team Leaders and £63.90 for Managers.\nClear-up Workers will do a 2.5 hour shift from 9am-11:30am the day after the Garden Party (Monday 17th June 2019) with £20 payment for completion of the clear-up work. \nPlease note, all workers are required to write valid cheques as security deposits before the event. "
   }
 ];
 
