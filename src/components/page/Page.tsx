@@ -5,6 +5,7 @@ import "./Page.css";
 
 interface IPageProps {
   name: string;
+  title?: string;
 }
 
 export default class Page extends React.Component<IPageProps> {
@@ -24,6 +25,10 @@ export default class Page extends React.Component<IPageProps> {
                 }
               }
             }>
+              { this.props.title ?
+                <h1>{this.props.title.toUpperCase()}</h1>
+                : null
+              }
               {this.props.children}
             </div>
           );

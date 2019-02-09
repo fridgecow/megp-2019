@@ -30,26 +30,21 @@ class App extends React.Component {
               </Page>
             </Pane>
             <Pane>
-              <Page name="tickets">
-                <h1>Tickets</h1>
-                Buy tickets now!
+              <Page name="tickets" title="Tickets">
                 <iframe src="https://fixr.co/event/225101863?compact=true"
                   style={{width: "400px", height: "550px", border: "none"}} />
               </Page>
-              <Page name="committee">
-                <h1>Committee</h1>
+              <Page name="committee" title="Committee">
                 <CommitteeList/>
               </Page>
-              <Page name="employment">
-                <h1>Employment</h1>
+              <Page name="employment" title="Employment">
                 {
                   employment.map(({role,description}) => 
                     <Expander key={role} heading={role} body={description}/>
                   )
                 }
               </Page>
-              <Page name="faqs">
-                <h1>FAQs</h1>
+              <Page name="faqs" title="FAQs">
                 {
                   faq.map(({heading, questions}) =>
                     <div key={heading}>
@@ -61,8 +56,7 @@ class App extends React.Component {
                   )
                 }
               </Page>
-              <Page name="tandc">
-                <h1>T+C</h1>
+              <Page name="tandc" title="T+C">
                 {
                   tandc.map(({heading, terms}) => [
                     <Expander key={"ex" + heading} heading={heading} body={

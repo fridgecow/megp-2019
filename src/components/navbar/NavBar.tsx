@@ -45,7 +45,7 @@ export default class NavBar extends React.Component {
       <div className="navbar">
         {
           items.map(item => (
-            <Link to={item.url} className="navlink">{item.name}</Link>  
+            <Link to={item.url} className="navlink">{item.name.toUpperCase()}</Link>  
           ))
         }
       </div>
