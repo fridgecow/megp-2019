@@ -16,6 +16,7 @@ import { tandc } from './lib/Tandc';
 import Logo from './logo.png';
 
 class App extends React.Component {
+  
   public render() {
     return (
       <Router>
@@ -32,7 +33,8 @@ class App extends React.Component {
             <Pane>
               <Page name="tickets" title="Tickets">
                 <iframe src="https://fixr.co/event/225101863?compact=true"
-                  style={{width: "400px", height: "550px", border: "none"}} />
+                  style={{width: "400px", height: "550px", border: "none", display: "none"}} 
+                  onLoad={e => e.currentTarget.style.display = ""}/>
               </Page>
               <Page name="committee" title="Committee">
                 <CommitteeList/>
