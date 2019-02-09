@@ -7,7 +7,6 @@
   display: flex;
   text-decoration: none;
   color: #1c4547;
-  transition: all 0.2s;
   font-size: 1.3em;
   width: 80%;
   margin: 0.5em auto;
@@ -32,15 +31,13 @@
   margin-top: 10px;
 }
 
-.expand-body {
-  transform: scaleY(0);
+.expand-body-container {
   height: 0px;
   transition: all 0.5s;
+  overflow: hidden;
 }
 
-.expand-toggle:checked ~ .expand-body {
-  transform: scaleY(1);
-  height: auto;
+.expand-toggle:checked ~ .expand-body-container {
   padding-bottom: 2em;
 }
 

@@ -1,2 +1,15 @@
-p {
+.CommitteeList-list {
+  list-style-type: none;
+}
+.CommitteeList-item {
+  margin: 20px 0;
+}
+
+.CommitteeList-item a{
+  color: #1c4547;
+  text-decoration: none;
+}
+
+.CommitteeList-item a:hover, .CommitteeList-item a:focus{
+  text-decoration: underline;
 }
