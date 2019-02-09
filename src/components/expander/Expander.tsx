@@ -16,7 +16,9 @@ export default class Expander extends React.Component<IExpanderProps> {
     return (
       <div className="expand">
         <input id={this.props.heading} className="expand-toggle" type="checkbox" defaultChecked={false}/>
-        <label className="expand-heading" htmlFor={this.props.heading}>{this.props.heading}</label>
+        <label htmlFor={this.props.heading} className="expand-heading">
+          <span className="expand-heading-text">{this.props.heading}</span>
+        </label>
         <div className="expand-body">
           {
             this.props.body.split

@@ -2,30 +2,30 @@
   display: none;
 }
 
+
 .expand-heading {
-  margin: 0.5em;
-  display: inline-block;
-  background-color: #e9d81c;
-  box-shadow: 2px 2px 0px #e91c48;
-  padding: 5px;
+  display: flex;
   text-decoration: none;
   color: #1c4547;
   transition: all 0.2s;
   font-size: 1.3em;
+  width: 80%;
+  margin: 0.5em auto;
+  cursor: pointer;
+}
+
+.expand-heading-text {
+  flex: 1;
+  margin: 0 0.5em;
+  cursor: pointer;
 }
 
 .expand-heading::before {
   content: "▶ ";
 }
 
-.expand-heading:hover, .expand-heading:focus{
-  box-shadow: 4px 4px 0px #e91c48;
-  transform: translate(-2px, -2px);
-}
-
-.expand-heading:active {
-  box-shadow: 0 0 0;
-  transform: translate(2px, 2px);
+.expand-heading:hover > .expand-heading-text, .expand-heading:focus > .expand-heading-text {
+  text-decoration: underline;
 }
 
 .navbar {
@@ -47,3 +47,4 @@
 .expand-toggle:checked ~ .expand-heading::before {
   content: "▼ ";
 }
+
