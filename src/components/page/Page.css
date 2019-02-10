@@ -11,9 +11,9 @@
 .padding-page {
   box-sizing: border-box;
   height: 192px;
-  padding-bottom: 100px;
   min-height: 192px;
   font-size: small;
+  display: block;
 }
 
 .page-header {
