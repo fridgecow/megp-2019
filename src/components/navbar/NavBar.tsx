@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Link } from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
 
 import "./NavBar.css";
 
@@ -45,7 +45,15 @@ export default class NavBar extends React.Component {
       <div className="navbar">
         {
           items.map(item => (
-            <Link key={item.name} to={item.url} className="navlink">{item.name.toUpperCase()}</Link>  
+            <Route path={item.url} children={
+              ({match}) => 
+                <Link 
+                  key={item.name} 
+                  to={item.url} 
+                  className={match !== null ? "navlink navlink-active" : "navlink"}>
+                {item.name.toUpperCase()}
+              </Link>  
+            } />
           ))
         }
       </div>

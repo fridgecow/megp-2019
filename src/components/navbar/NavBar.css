@@ -10,7 +10,7 @@
   transition: all 0.2s;
 }
 
-.navlink:hover, .navlink:focus{
+.navlink:hover, .navlink:focus, .navlink-active{
   box-shadow: 4px 4px 0px #e91c48;
   transform: translate(-2px, -2px);
 }
@@ -19,6 +19,12 @@
   box-shadow: 0 0 0;
   transform: translate(2px, 2px);
 }
+
+/*
+.navlink-active {
+  color: #e91c48;
+}
+*/
 
 .navbar {
   margin-top: 10px;
