@@ -8,6 +8,7 @@
   margin: 2px;
   color: #1c4547;
   transition: all 0.2s;
+  font-family: "TriompheBold", sans-serif;
 }
 
 .navlink:hover, .navlink:focus, .navlink-active{
@@ -28,5 +29,4 @@
 
 .navbar {
   margin-top: 10px;
-  font-family: "TriompheBold", sans-serif;
 }

@@ -20,7 +20,7 @@ export default class TicketPage extends React.Component{
       <Page name="tickets">
         {
           this.state.error ?
-            <a className="navlink" href="https://fixr.co/event/225101863">Click Here To Buy Tickets</a>
+            <a className="navlink" href="https://fixr.co/event/225101863">CLICK HERE TO BUY TICKETS</a>
             :
             <iframe src="https://fixr.co/event/225101863?compact=true"
                   style={{

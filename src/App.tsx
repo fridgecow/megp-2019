@@ -38,7 +38,7 @@ class App extends React.Component {
                 <CommitteeList/>
               </Page>
               <Page name="employment" title="Employment">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc22Xm_SG4P7ueFZIZFkLdmGtf1u5jdRlmN95InQHj-n8JCwg/viewform" className="navlink" target="_blank">Apply Now!</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc22Xm_SG4P7ueFZIZFkLdmGtf1u5jdRlmN95InQHj-n8JCwg/viewform" className="navlink" target="_blank">APPLY NOW!</a>
                 {
                   employment.map(({role,description}) => 
                     <Expander key={role} heading={role} body={description}/>
