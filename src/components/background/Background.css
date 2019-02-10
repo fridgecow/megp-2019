@@ -11,7 +11,7 @@
 }
 
 /* Large width styles */
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1000px) and (min-aspect-ratio: 16/11) {
   .background {
     background-image: url("balloon-ud.png"), url("balloon-ud.png"), url("balloon.png"), url("balloon.png"), url("bg-noballoons.png");
     background-position: 55% 27%, 48% 40%, 53% 59%, 47% 72%, center;

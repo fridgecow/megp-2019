@@ -39,7 +39,7 @@
 }
 
 /* Large width styles */
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1000px) and (min-aspect-ratio: 16/11) {
   .logo {
     width: 40vw;
     height: auto;
