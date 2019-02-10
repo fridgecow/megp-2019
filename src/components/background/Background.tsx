@@ -31,7 +31,15 @@ export default class Background extends React.Component {
 
     // Update positions
     this.balloonPositions = this.balloonPositions.map(
-      ({x, y, v, o, ...other}) => ({x, v, y: y + v*(1 + o), o, ...other})
+      ({y, v, o, ...other}) => {
+        const newY = y + v*(1 + o); 
+        return {
+          o,
+          v, 
+          y: newY < -39 ? 140 : (newY > 140 ? -39 : newY), 
+          ...other
+        }
+      }
     );
     window.requestAnimationFrame(this.animateBalloons);
   }
