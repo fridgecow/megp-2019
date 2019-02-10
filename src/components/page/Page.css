@@ -9,8 +9,11 @@
 }
 
 .padding-page {
+  box-sizing: border-box;
   height: 192px;
-  min-height: 192px !important;
+  padding-bottom: 100px;
+  min-height: 192px;
+  font-size: small;
 }
 
 .page-header {

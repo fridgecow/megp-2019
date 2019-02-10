@@ -9,10 +9,6 @@ interface IPageProps {
 }
 
 export default class Page extends React.Component<IPageProps> {
-  constructor(props: IPageProps) {
-    super(props);
-  }
-
   public render() {
     return (
       <Route path={`/${this.props.name}`} children={
