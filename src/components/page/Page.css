@@ -17,9 +17,16 @@
   font-family: 'TriompheBold', sans-serif;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1000px) and (min-aspect-ratio: 16/11) {
   .page {
     width: 100%;
     margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .page {
+    margin-left: 32px;
+    width: calc(100% - 64px);
   }
 }

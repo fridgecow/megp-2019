@@ -34,3 +34,9 @@
               url(border/right.png) right repeat-y;
   pointer-events: none;
 }
+
+@media only screen and (max-width: 500px) {
+  .border {
+    display: none;
+  }
+}
