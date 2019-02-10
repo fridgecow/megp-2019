@@ -15,6 +15,8 @@ import { faq } from './lib/Faqs';
 import { tandc } from './lib/Tandc';
 import Logo from './logo.png';
 
+import TicketPage from './page/TicketPage';
+
 class App extends React.Component {
   
   public render() {
@@ -31,11 +33,7 @@ class App extends React.Component {
               </Page>
             </Pane>
             <Pane>
-              <Page name="tickets">
-                <iframe src="https://fixr.co/event/225101863?compact=true"
-                  style={{width: "400px", height: "550px", border: "none", display: "none", marginTop: "4vh"}} 
-                  onLoad={e => e.currentTarget.style.display = ""}/>
-              </Page>
+              <TicketPage />
               <Page name="committee" title="Committee">
                 <CommitteeList/>
               </Page>
