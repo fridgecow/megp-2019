@@ -12,7 +12,7 @@ export default class TicketPage extends React.Component{
       if(!this.state.loaded){
         this.setState({error: true});
       }
-    }, 1000);
+    }, 3000);
   }
 
   public render(){
