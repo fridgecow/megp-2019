@@ -11,12 +11,12 @@ const committee: ICommitteeMember[] = [
   {
     name: "Patricia Behling",
     role: "President",
-    email: "pb661@cam.ac.uk"
+    email: "president@megp19.com"
   },
   {
     name: "Leila Hamza",
     role: "President",
-    email: "lh573@cam.ac.uk"
+    email: "president@megp19.com"
   },
   {
     name: "Jialin Feng",
@@ -61,12 +61,12 @@ const committee: ICommitteeMember[] = [
   {
     name: "Vidya Kanakaratnam",
     role: "Ticketing",
-    email: "vmk26@cam.ac.uk"
+    email: "ticketing@megp19.com"
   },
   {
     name: "Isy Lynch",
     role: "Ticketing",
-    email: "il292@cam.ac.uk"
+    email: "ticketing@megp19.com"
   },
   {
     name: "Bex Swaney",
