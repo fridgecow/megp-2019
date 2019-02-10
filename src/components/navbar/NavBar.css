@@ -1,0 +1,32 @@
+.navlink {
+  margin: 0 10px;
+  display: inline-block;
+  background-color: #e9d81c;
+  box-shadow: 2px 2px 0px #e91c48;
+  padding: 5px;
+  text-decoration: none;
+  margin: 2px;
+  color: #1c4547;
+  transition: all 0.2s;
+  font-family: "TriompheBold", sans-serif;
+}
+
+.navlink:hover, .navlink:focus, .navlink-active{
+  box-shadow: 4px 4px 0px #e91c48;
+  transform: translate(-2px, -2px);
+}
+
+.navlink:active {
+  box-shadow: 0 0 0;
+  transform: translate(2px, 2px);
+}
+
+/*
+.navlink-active {
+  color: #e91c48;
+}
+*/
+
+.navbar {
+  margin-top: 10px;
+}

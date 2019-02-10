@@ -1,0 +1,21 @@
+.background {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background-repeat: no-repeat;
+  background-color: rgb(218, 170, 78);
+  background-size: 100% 100%;
+  background-position: center;
+  background-image: url("bg-half.png");
+  z-index: -1;
+}
+
+/* Large width styles */
+@media only screen and (min-width: 1000px) and (min-aspect-ratio: 16/11) {
+  .background {
+    background-image: url("balloon-ud.png"), url("balloon-ud.png"), url("balloon.png"), url("balloon.png"), url("bg-noballoons.png");
+    background-position: 55% 27%, 48% 40%, 53% 59%, 47% 72%, center;
+    background-size: auto 24%, auto 14%, auto 14%, auto 24%, 100% 100%;
+  }
+}
+

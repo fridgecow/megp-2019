@@ -1,0 +1,13 @@
+.pane {
+  height: 100vh;
+  padding-left: 9vw;
+  padding-right: 9vw;
+}
+
+@media only screen and (min-width: 1000px) and (min-aspect-ratio: 16/11) {
+  .pane {
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}

@@ -1,0 +1,47 @@
+.expand-toggle {
+  display: none;
+}
+
+
+.expand-heading {
+  display: flex;
+  text-decoration: none;
+  color: #1c4547;
+  font-size: 1.3em;
+  width: 80%;
+  margin: 0.5em auto;
+  cursor: pointer;
+}
+
+.expand-heading-text {
+  flex: 1;
+  margin: 0 0.5em;
+  cursor: pointer;
+}
+
+.expand-heading::before {
+  content: "▶ ";
+}
+
+.expand-heading:hover > .expand-heading-text, .expand-heading:focus > .expand-heading-text {
+  text-decoration: underline;
+}
+
+.navbar {
+  margin-top: 10px;
+}
+
+.expand-body-container {
+  height: 0px;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+
+.expand-toggle:checked ~ .expand-body-container {
+  padding-bottom: 2em;
+}
+
+.expand-toggle:checked ~ .expand-heading::before {
+  content: "▼ ";
+}
+

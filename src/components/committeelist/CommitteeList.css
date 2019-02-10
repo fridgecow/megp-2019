@@ -1,0 +1,20 @@
+.CommitteeList-list {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 0;
+  padding: 0;
+}
+
+.CommitteeList-item {
+  padding-bottom: 1.5em;
+}
+
+.CommitteeList-item a{
+  color: #1c4547;
+  text-decoration: none;
+}
+
+.CommitteeList-item a:hover, .CommitteeList-item a:focus{
+  text-decoration: underline;
+}
