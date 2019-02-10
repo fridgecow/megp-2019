@@ -25,13 +25,13 @@ export default class Background extends React.Component {
     if(this.bgRef.current){
       const bg = this.bgRef.current;
       bg.style.backgroundPosition = this.balloonPositions.map(
-        ({x, y, o}) => `${x + Math.sin((t - this.animationStart)/(o*500 + 100) + o)}% ${y}%`
+        ({x, y, o}) => `${x + o*Math.sin((t - this.animationStart)/(o*500 + 100) + o)}% ${y}%`
       ).join(", ")
     }
 
     // Update positions
     this.balloonPositions = this.balloonPositions.map(
-      ({x, y, v, ...other}) => ({x, v, y: y + v, ...other})
+      ({x, y, v, o, ...other}) => ({x, v, y: y + v*(1 + o), o, ...other})
     );
     window.requestAnimationFrame(this.animateBalloons);
   }
