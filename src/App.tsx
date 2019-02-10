@@ -57,7 +57,7 @@ class App extends React.Component {
                   )
                 }
               </Page>
-              <Page name="tandc" title="T+C">
+              <Page name="tandc" title="Terms and Conditions">
                 {
                   tandc.map(({heading, terms}) => [
                     <Expander key={"ex" + heading} heading={heading} body={
