@@ -31,9 +31,9 @@ class App extends React.Component {
               </Page>
             </Pane>
             <Pane>
-              <Page name="tickets" title="Tickets">
+              <Page name="tickets">
                 <iframe src="https://fixr.co/event/225101863?compact=true"
-                  style={{width: "400px", height: "550px", border: "none", display: "none"}} 
+                  style={{width: "400px", height: "550px", border: "none", display: "none", marginTop: "4vh"}} 
                   onLoad={e => e.currentTarget.style.display = ""}/>
               </Page>
               <Page name="committee" title="Committee">

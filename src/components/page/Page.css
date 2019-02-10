@@ -13,6 +13,10 @@
   min-height: 192px !important;
 }
 
+.page-header {
+  font-family: 'TriompheBold', sans-serif;
+}
+
 @media only screen and (min-width: 1000px) {
   .page {
     width: 100%;

@@ -26,7 +26,7 @@ export default class Page extends React.Component<IPageProps> {
               }
             }>
               { this.props.title ?
-                <h1>{this.props.title.toUpperCase()}</h1>
+                <h1 className="page-header">{this.props.title.toUpperCase()}</h1>
                 : null
               }
               {this.props.children}

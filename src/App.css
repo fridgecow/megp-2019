@@ -1,6 +1,12 @@
+@font-face {
+    font-family: 'TriompheBold';
+    src: url('./resources/Triomphe-Bold.ttf');
+}
+
 .App {
   text-align: center;
   height: 100vh;
+  font-family: sans-serif;
 }
 
 /* Small-width and common styles */
@@ -36,6 +42,10 @@
   font-weight: bold;
   max-height: 100%;
   max-width: 100%;
+}
+
+.terms {
+  text-align: left;
 }
 
 /* Large width styles */
