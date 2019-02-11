@@ -16,6 +16,7 @@ export default class TicketPage extends React.Component{
   }
 
   public render(){
+    return null;
     return ( 
       <Page name="tickets">
         {
