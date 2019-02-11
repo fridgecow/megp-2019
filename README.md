@@ -3,6 +3,14 @@
 
 This is the website for MEGP19, built using React and Typescript. It was designed to be hosted on the [SRCF](https://www.srcf.net) at [megp19.com](https://www.megp19.com), although deploying elsewhere should not be difficult.
 
+## Screenshots
+
+![](screenshots/landing.png?raw=true)
+
+![](screenshots/mobile.png?raw=true)
+
+![](screenshots/balloons.gif?raw=true)
+
 ## Development
 
 This works similarly to any [Create React App](https://github.com/facebookincubator/create-react-app) application, however the project is set up to use Typescript.
