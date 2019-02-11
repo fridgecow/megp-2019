@@ -1,0 +1,12 @@
+Options -MultiViews
+RewriteEngine on
+
+# Redirect to HTTPS
+RewriteCond %{HTTP_HOST}   megp19.com$
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://www.megp19.com/$1 [L,NC,R=301]
+
+# Don't rewrite files or directories
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+# Rewrite everything else to index.html to allow html5 state links
+RewriteRule ^ index.html [QSA,L]
