@@ -16,6 +16,11 @@ export default class TicketPage extends React.Component{
   }
 
   public render(){
+    return (
+      <Page name="tickets" title="Tickets">
+          Tickets will be released at 12 noon on Sunday!
+      </Page>
+    );
     return ( 
       <Page name="tickets">
         {
@@ -35,6 +40,6 @@ export default class TicketPage extends React.Component{
               onError={e => this.setState({error: true}) }/>
         }
       </Page>
-    )
+    );
   }
 }
