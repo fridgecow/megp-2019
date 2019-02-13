@@ -16,11 +16,16 @@ export default class TicketPage extends React.Component{
   }
 
   public render(){
-    return (
-      <Page name="tickets" title="Tickets">
-          Tickets will be released at 12 noon on Sunday!
-      </Page>
-    );
+    const time = Date.now()
+
+    if(time < 1550354400*1000){ // Before 16th Feb at 22:00
+      return (
+        <Page name="tickets" title="Tickets">
+            Tickets will be released at 12 noon on Sunday!
+        </Page>
+      );
+    }
+
     return ( 
       <Page name="tickets">
         {
