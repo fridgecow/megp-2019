@@ -18,3 +18,10 @@
 .CommitteeList-item a:hover, .CommitteeList-item a:focus{
   text-decoration: underline;
 }
+
+.headshot {
+  width: 50%;
+  border: 1px solid #889e9f;
+  border-radius: 50%;
+  max-width: 256px;
+}
