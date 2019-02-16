@@ -33,7 +33,7 @@ export const faq : ISection[] = [
         answer: "Whilst MEGP does not enforce a formal dress code, we request that guests dress respectfully and in the spirit of the event; summer smart-casual attire."
       },
       {
-        question: "Will MEGP18 cater to my dietary requirements?",
+        question: "Will MEGP19 cater to my dietary requirements?",
         answer: "At MEGP we hope everyone will feel welcome, as such we will be offering vegetarian and vegan food, as well as gluten and dairy free, throughout the event. Allergy advice for all food items will be displayed by the stand - so you’ll know exactly what you’re eating."
       }
     ]
