@@ -42,6 +42,12 @@ const committee: ICommitteeMember[] = [
     image: lh573
   },
   {
+    name: "Helen Piatkowski",
+    role: "Treasurer",
+    email: "hp386@cam.ac.uk",
+    image: hp386
+  },
+  {
     name: "Jialin Feng",
     role: "Security",
     email: "jf616@cam.ac.uk",
@@ -52,24 +58,6 @@ const committee: ICommitteeMember[] = [
     role: "Sustainability",
     email: "sra43@cam.ac.uk",
     image: sra43
-  },
-  {
-    name: "Sammy Lappage",
-    role: "Publicity & Sponsorship",
-    email: "sml74@cam.ac.uk",
-    image: sml74
-  },
-  {
-    name: "Chong Hui Xian",
-    role: "Decs",
-    email: "hxc21@cam.ac.uk",
-    image: hxc21
-  },
-  {
-    name: "Eva Kettle",
-    role: "Decs",
-    email: "ek425@cam.ac.uk",
-    image: ek425
   },
   {
     name: "Helen Essell",
@@ -138,11 +126,23 @@ const committee: ICommitteeMember[] = [
     image: jj469
   },
   {
-    name: "Helen Piatkowski",
-    role: "Treasurer",
-    email: "hp386@cam.ac.uk",
-    image: hp386
-  }
+    name: "Eva Kettle",
+    role: "Decs",
+    email: "ek425@cam.ac.uk",
+    image: ek425
+  },
+  {
+    name: "Chong Hui Xian",
+    role: "Decs",
+    email: "hxc21@cam.ac.uk",
+    image: hxc21
+  },
+  {
+    name: "Sammy Lappage",
+    role: "Publicity & Sponsorship",
+    email: "sml74@cam.ac.uk",
+    image: sml74
+  },
 ];
 
 export default ({}) => {
