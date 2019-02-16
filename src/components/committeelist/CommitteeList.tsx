@@ -1,11 +1,31 @@
 import * as React from "react";
 import "./CommitteeList.css";
 
+import ek425 from '../../resources/headshots/ek425.jpeg';
+import elgb2 from '../../resources/headshots/elgb2.jpeg';
+import hme30 from '../../resources/headshots/hme30.jpeg';
+import hp386 from '../../resources/headshots/hp386.jpeg';
+import hxc21 from '../../resources/headshots/hxc21.jpeg';
+import il292 from '../../resources/headshots/il292.jpeg';
+import jf616 from '../../resources/headshots/jf616.jpeg';
+import jj469 from '../../resources/headshots/jj469.jpeg';
+import kaje2 from '../../resources/headshots/kaje2.jpeg';
+import lh573 from '../../resources/headshots/lh573.jpeg';
+import pb661 from '../../resources/headshots/pb661.jpeg';
+import rh656 from '../../resources/headshots/rh656.jpeg';
+import rrs34 from '../../resources/headshots/rrs34.jpeg';
+import rw592 from '../../resources/headshots/rw592.jpeg';
+import sml74 from '../../resources/headshots/sml74.jpeg';
+import sra43 from '../../resources/headshots/sra43.jpeg';
+import ss2410 from '../../resources/headshots/ss2410.jpeg';
+import tey21 from '../../resources/headshots/tey21.jpeg';
+import vmk26 from '../../resources/headshots/vmk26.jpeg';
+
 interface ICommitteeMember {
   name: string,
   email: string,
   role: string,
-  crsid: string
+  image: string
 }
 
 const committee: ICommitteeMember[] = [
@@ -13,132 +33,124 @@ const committee: ICommitteeMember[] = [
     name: "Patricia Behling",
     role: "President",
     email: "president@megp19.com",
-    crsid: "pb661"
+    image: pb661
   },
   {
     name: "Leila Hamza",
     role: "President",
     email: "president@megp19.com",
-    crsid: "lh573"
+    image: lh573
   },
   {
     name: "Jialin Feng",
     role: "Security",
     email: "jf616@cam.ac.uk",
-    crsid: "jf616"
+    image: jf616
   },
   {
     name: "Saffy Ahmad",
     role: "Sustainability",
     email: "sra43@cam.ac.uk",
-    crsid: "sra43"
+    image: sra43
   },
   {
     name: "Sammy Lappage",
     role: "Publicity & Sponsorship",
     email: "sml74@cam.ac.uk",
-    crsid: "sml74"
+    image: sml74
   },
   {
     name: "Chong Hui Xian",
     role: "Decs",
     email: "hxc21@cam.ac.uk",
-    crsid: "hxc21"
+    image: hxc21
   },
   {
     name: "Eva Kettle",
     role: "Decs",
     email: "ek425@cam.ac.uk",
-    crsid: "ek425"
+    image: ek425
   },
   {
     name: "Helen Essell",
     role: "Employment",
     email: "hme30@cam.ac.uk",
-    crsid: "hme30"
+    image: hme30
   },
   {
     name: "Sophie Stevens",
     role: "Non-Music Ents",
     email: "ss2410@cam.ac.uk",
-    crsid: "ss2410"
+    image: ss2410
   },
   {
     name: "Rebecca Wright",
     role: "Legal & Compliance",
     email: "rw592@cam.ac.uk",
-    crsid: "rw592"
+    image: rw592
   },
   {
     name: "Vidya Kanakaratnam",
     role: "Ticketing",
     email: "ticketing@megp19.com",
-    crsid: "vmk26"
+    image: vmk26
   },
   {
     name: "Isy Lynch",
     role: "Ticketing",
     email: "ticketing@megp19.com",
-    crsid: "il292"
+    image: il292
   },
   {
     name: "Bex Swaney",
     role: "Music",
     email: "rrs34@cam.ac.uk",
-    crsid: "rrs34"
+    image: rrs34
   },
   {
     name: "Elodie Burton",
     role: "Music",
     email: "elgb2@cam.ac.uk",
-    crsid: "elgb2"
+    image: elgb2
   },
   {
     name: "Tallulah Young",
     role: "Drinks",
     email: "tey21@cam.ac.uk",
-    crsid: "tey21"
+    image: tey21
   },
   {
     name: "Kathryn Evans",
     role: "Drinks",
     email: "kaje2@cam.ac.uk",
-    crsid: "kaje2"
+    image: kaje2
   },
   {
     name: "Rebecca Hunter",
     role: "Food",
     email: "rh656@cam.ac.uk",
-    crsid: "rh656"
+    image: rh656
   },
   {
     name: "Juhi James",
     role: "Food",
     email: "jj469@cam.ac.uk",
-    crsid: "jj469"
+    image: jj469
   },
   {
     name: "Helen Piatkowski",
     role: "Treasurer",
     email: "hp386@cam.ac.uk",
-    crsid: "hp386"
+    image: hp386
   }
 ];
-
-function importAll(r : any) {
-  const imgs = {};
-  r.keys().map((item : any, index : any) => { imgs[item.replace('./','')] = r(item); });
-  return imgs;
-}
-
-const images = importAll(require.context('../../resources/headshots', false, /\.(jpeg)$/));
 
 export default ({}) => {
   return <ul className="CommitteeList-list">
     {
-      committee.map(({name, role, email, crsid}) => <li key={name} className="CommitteeList-item">
-        <a href={images[crsid + ".jpeg"]}>
-          <img src={images[crsid + ".jpeg"]} className="headshot"/><br/>
+      committee.map(({name, role, email, image}) => <li key={name} className="CommitteeList-item">
+        <a href={image}>
+          <img src={image} className="headshot"/><br/>
         </a>
         <a href={`mailto:${email}`}>
           {name}<br />
