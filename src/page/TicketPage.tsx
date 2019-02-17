@@ -53,7 +53,7 @@ export default class TicketPage extends React.Component{
               <iframe src="https://fixr.co/event/109609730?compact=true"
                     style={{
                       width: "90vw",
-                      maxWidth: "400px",
+                      maxWidth: "500px",
                       height: "550px",
                       border: "none",
                       marginTop: "4vh",
