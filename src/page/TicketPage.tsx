@@ -32,7 +32,7 @@ export default class TicketPage extends React.Component{
           this.state.error ?
             <a className="navlink" href="https://fixr.co/event/225101863">CLICK HERE TO BUY TICKETS</a>
             :
-            <iframe src="https://fixr.co/event/225101863?compact=true"
+            <iframe src="https://fixr.co/event/109609730?compact=true"
                   style={{
                     width: "90vw",
                     maxWidth: "400px",
