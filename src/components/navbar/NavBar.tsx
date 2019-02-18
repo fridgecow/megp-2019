@@ -17,10 +17,11 @@ const items: INavItem[] = [
     url: "/committee",
     name: "Commitee"
   },
-/*  {
+  {
     url: "/charity",
     name: "Charity"
   },
+/*
   {
     url: "/sponsors",
     name: "Sponsors"
