@@ -10,7 +10,6 @@ import PaddingPage from './components/page/PaddingPage';
 import Page from './components/page/Page';
 import Pane from './components/pane/Pane';
 
-import employment from './lib/Employment';
 import { faq } from './lib/Faqs';
 import { tandc } from './lib/Tandc';
 import Logo from './logo.png';
@@ -36,14 +35,6 @@ class App extends React.Component {
               <TicketPage />
               <Page name="committee" title="Committee">
                 <CommitteeList/>
-              </Page>
-              <Page name="employment" title="Employment">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc22Xm_SG4P7ueFZIZFkLdmGtf1u5jdRlmN95InQHj-n8JCwg/viewform" className="navlink" target="_blank">APPLY NOW!</a>
-                {
-                  employment.map(({role,description}) => 
-                    <Expander key={role} heading={role} body={description}/>
-                  )
-                }
               </Page>
               <Page name="faqs" title="FAQs">
                 {
