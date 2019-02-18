@@ -45,7 +45,7 @@ export default class TicketPage extends React.Component{
       <Page name="tickets" title="Name Change">
         {
           <div>
-            <p>Tickets to MEGP19 have now sold out. If you want to transfer any of your tickets, please purchase a transfer option below:</p>
+            <p style={{padding: "0 5vw"}}>Tickets to MEGP19 have now sold out. If you want to transfer any of your tickets, please purchase a transfer option below:</p>
             {
             this.state.error ?
               <a className="navlink" href="https://fixr.co/event/109609730">CLICK HERE TO BUY NAME CHANGES</a>
