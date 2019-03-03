@@ -38,7 +38,7 @@ class App extends React.Component {
               </Page>
               <Page name="charity" title="Charity">
                 <p>
-                  This year the Murray Edwards Garden Party committee are proud to announce that our chosen charity is Cool Earth. They will receive funds through both charitable donations made following <a href="https://www.coolearth.org/get-involved/donate-cool-earth/">this</a> link and from collection buckets roaming around the gardens on the day. We are also extremely delighted that £1 from every official after party ticket sold will be donated to Cool Earth.  
+                  This year the Murray Edwards Garden Party committee are proud to announce that our chosen charity is Cool Earth. They will receive funds through both charitable donations made following <a href="https://www.coolearth.org/get-involved/donate-cool-earth/">this link</a> and from collection buckets roaming around the gardens on the day. We are also extremely delighted that £1 from every official after party ticket sold will be donated to Cool Earth.  
                 </p>
 
                 <p>
