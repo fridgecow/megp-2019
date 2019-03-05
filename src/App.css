@@ -65,3 +65,8 @@ h1 {
   margin-top: 10vh;
   margin-bottom: 1em;
 }
+
+.charityLogo {
+  max-width: 60%;
+  width: 500px;
+}

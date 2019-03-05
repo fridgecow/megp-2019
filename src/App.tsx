@@ -14,6 +14,8 @@ import { faq } from './lib/Faqs';
 import { tandc } from './lib/Tandc';
 import Logo from './logo.png';
 
+import coolEarth from './coolEarth.svg';
+
 import TicketPage from './page/TicketPage';
 
 class App extends React.Component {
@@ -37,6 +39,7 @@ class App extends React.Component {
                 <CommitteeList/>
               </Page>
               <Page name="charity" title="Charity">
+                <a href="https://www.coolearth.org/get-involved/donate-cool-earth/" className="charityLogo"><img src={coolEarth} className="charityLogo"/></a>
                 <p>
                   This year the Murray Edwards Garden Party committee are proud to announce that our chosen charity is Cool Earth. They will receive funds through both charitable donations made following <a href="https://www.coolearth.org/get-involved/donate-cool-earth/">this link</a> and from collection buckets roaming around the gardens on the day. We are also extremely delighted that £1 from every official after party ticket sold will be donated to Cool Earth.  
                 </p>
